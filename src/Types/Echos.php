@@ -26,8 +26,8 @@ class Echos extends TypeBase {
 
 	public function resolveEcho($rootValue, array $args): string {
 		$target = empty($args['userName']) ? 'World' : $args['userName'];
-		error_log(var_export($rootValue, true), 3, 'debug.log');
-		error_log(var_export($args, true), 3, 'debug.log');
+		log_message('$rootValue', $rootValue); // DEBUG
+		log_message('$args', $args); // DEBUG
 		return 'Hello ' . $target . '!';
 	}
 }
