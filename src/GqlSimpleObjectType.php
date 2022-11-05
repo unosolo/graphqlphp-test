@@ -6,7 +6,6 @@ use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
 
 class GqlSimpleObjectType {
-
 	public function queryType(): ObjectType {
 		return new ObjectType([
 			'name' => 'Query',
