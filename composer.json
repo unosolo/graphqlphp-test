@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Unosolo\\GqlSimple\\": "src/"
+            "GqlSimple\\": "src/"
         }
     },
     "authors": [
