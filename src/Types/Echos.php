@@ -7,6 +7,15 @@ use GqlSimple\Core\TypeBase;
 use GraphQL\Type\Definition\Type;
 
 class Echos extends TypeBase {
+
+	/**
+	 * For request
+	 * {
+	 *      echos(userName: "Julio")
+	 *  }
+	 *
+	 * @return array
+	 */
 	public function type(): array {
 		return [
 			'name' => 'Query',
